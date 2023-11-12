@@ -1,0 +1,47 @@
+.form {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.moviesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.moviesListItem {
+  /* width: calc((100% - 32px) / 5); */
+  width: 200px;
+}
+
+.moviesListItemLink {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  /* height: 330px; */
+  text-align: center;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+
+    & .moviesListItemTitle {
+      color: tomato;
+    }
+  }
+}
+
+.moviesListItemImage {
+  width: 200px;
+}
+
+.moviesListItemTitle {
+  padding: 8px;
+  font-size: 16px;
+  color: black;
+  transition: color 0.3s;
+}

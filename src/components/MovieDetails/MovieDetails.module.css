@@ -1,0 +1,14 @@
+.movieDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.movieMainDetails {
+  /* display: flex; */
+  align-items: start;
+}
+
+.movieImg {
+  object-fit: contain;
+  float: left;
+}
